@@ -1,0 +1,299 @@
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: linear-gradient(#000005, #050520);
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.star {
+  border-radius: 100%;
+  position: absolute;
+  display: block;
+}
+
+.star {
+  animation: twinkle 2s linear 0s infinite normal;
+  background: #fff;
+  z-index: 1;
+  left: 100%;
+  top: 100%;
+}
+
+.moon {
+  background: url("time-portal1.png") no-repeat 0 0;
+  transform: rotate(-10deg);
+  height: 500px;
+  width: 800px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  /* animation: float 1s ease-in-out infinite normal; */
+}
+
+@keyframes twinkle {
+  0% { 
+    transform: scale(1.0);
+    opacity: 1; 
+  }
+  50% { 
+    transform: scale(0); 
+    opacity: 0; }
+  100% { 
+    transform: scale(1.0); 
+    opacity: 1; 
+  }
+}
+@keyframes float {
+  /* 0%  {left: 0px; top: 0px;}
+  25% {left: 200px; top: 0px;}
+  50% {left: 200px; top: 200px;}
+  75% {left: 0px; top: 200px;}
+  100% {left: 0px; top: 0px;} */
+}
+/* #earth {
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  
+  height: 50px;
+  width: 50px;
+  margin-left: -25px;
+  margin-top: -25px;
+  
+  border-color: blue;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 50%;
+  
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+-moz-box-shadow:    0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+box-shadow:         0px 0px 20px 0px rgba(255, 255, 255, 0.5);
+background: lightblue;
+}
+
+#earth-orbit {
+
+  position: absolute;
+  top: 0%;
+  right: 0%;
+
+  width: 800px;
+  height: 1000px;
+  margin-top: -250px;
+  margin-left: -250px;
+
+  border-width: 0px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 50%;
+  
+  -webkit-animation: spin-right 10s linear infinite;
+   -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+     -o-animation: spin-right 10s linear infinite;
+        animation: spin-right 10s linear infinite;
+}
+
+#moon {
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  
+  height: 20px;
+  width: 20px;
+  margin-left: -25px;
+  margin-top: -25px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  
+  -webkit-box-shadow: 1px 1px 16px 0px rgba(255, 255, 255, .6);
+-moz-box-shadow:    1px 1px 16px 0px rgba(255, 255, 255, .6);
+box-shadow:         1px 1px 16px 0px rgba(255, 255, 255, .6);
+background: lightgray;
+}
+
+#moon-orbit {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 110px;
+  height: 80px;
+  margin-top: -285px;
+  margin-left: -45px;
+
+  border-width: 0px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 50%;
+  
+  -webkit-animation: spin-right 10s linear infinite;
+   -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+     -o-animation: spin-right 10s linear infinite;
+        animation: spin-right 10s linear infinite;
+}
+
+@-webkit-keyframes spin-right {
+100% {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+}
+
+@keyframes spin-right {
+100% {
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+} */
+
+.custom-navbar{
+  padding-top: 40px;
+}
+
+.brand-logo{
+  margin-left: 60px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.navbar-links{
+  display: inline-block;
+  float: right;
+  margin-right: 60px;
+  text-transform: uppercase;
+  padding-top: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+/*    overflow: hidden;*/
+  display: flex; 
+  align-items: center; 
+}
+
+li {
+  float: left;
+  padding: 0px 15px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing : 2px;
+  font-size: 12px;
+  
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+li a:hover {
+  color: #9169FF;
+}
+
+.btn-request{
+  padding: 10px 25px;
+  border: 1px solid #9169FF;
+  border-radius: 100px;
+  font-weight: 400;
+}
+
+.btn-request:hover{
+  background-color: #9169FF;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+.object_astronaut{
+  animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_astronaut{
+  z-index: 110 !important;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  will-change: transform;
+  animation: move-astronaut 50s infinite linear both alternate;
+}
+@-moz-keyframes move-astronaut {
+  100% { -moz-transform: translate(-160px, -160px);}
+}
+@-webkit-keyframes move-astronaut {
+  100% { -webkit-transform: translate(-160px, -160px);}
+}
+@keyframes move-astronaut{
+  100% { -webkit-transform: translate(-160px, -160px); transform:translate(-160px, -160px); }
+}
+@-moz-keyframes rotate-astronaut {
+  100% { -moz-transform: rotate(-720deg);}
+}
+@-webkit-keyframes rotate-astronaut {
+  100% { -webkit-transform: rotate(-720deg);}
+}
+@keyframes rotate-astronaut{
+  100% { -webkit-transform: rotate(-720deg); transform:rotate(-720deg); }
+}
+.btn-go-home{
+  position: relative;
+  z-index: 200;
+  margin: 45px auto;
+  width: 200px;
+  padding: 10px 15px;
+  border: 1px solid #9169FF;
+  border-radius: 100px;
+  font-weight: 400;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing : 2px;
+  font-size: 11px;
+  
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.btn-go-home:hover{
+  background-color: #9169FF;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
+}
+
+.central-body{
+/*    width: 100%;*/
+  padding: 17% 5% 10% 5%;
+  left:0;
+  top:0;
+  position: absolute;
+  text-align: center;
+}
